@@ -1,0 +1,6 @@
+services:
+  greetings:
+    container_name: greetingapp
+    image: greetingapp
+    ports:
+      - "56724:8080"
