@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace GreetingApp3.Controllers
+namespace GreetingApp.Controllers
 {
     [ApiController]
     [Route("")]
@@ -16,6 +16,8 @@ namespace GreetingApp3.Controllers
         [HttpGet(Name = "GetGreeting")]
         public string Greet(string? name)
         {
+            // Normally the logic would most likely not be directly implemented in the controller
+
             if (name == null)
                 return "Hello, World!";
             else
